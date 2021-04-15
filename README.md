@@ -4,7 +4,7 @@ NVIDIA GPU and TF.Data API optimized Convolution Deep Neural Network for Binary 
 One device strategy and OS.Environ gpu_private thread mode for single GPU optimized computations for a Convolutional Deep Neural Network. 
 
 Mixed precision float policy for increased speed and Jupyter-Lab tensorboard callbacks and implemenation for pipeline bottleneck analysis. 
-Resize/rescale, cache, shuffle, batch, augment (cached again for input speed), the all TF.Data datasets prefetched with autotuned buffer_size. 
+Resize/rescale, cache, shuffle, batch, augment (trainineg data re-cached after augmentation for input speed), then all TF.Data datasets prefetched with autotuned buffer_size. 
 
 Autotuned number of parallel operations for tf.data.map(map_func) and tf.data.interleave(map_func) (interleave currently commented out due to slower times on my dev machine)
 
